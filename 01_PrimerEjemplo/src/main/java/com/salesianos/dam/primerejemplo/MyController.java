@@ -10,10 +10,8 @@ import java.util.List;
 public class MyController {
 
     @GetMapping ("/hello")
-    public Greeting hello(String name){
-        @RequestParam(defaultValue = "World"){
+    public Greeting hello(String name) (@RequestParam(defaultValue = "World"){
 
-        }
         return new Greeting("Hello", name);
 
     }
