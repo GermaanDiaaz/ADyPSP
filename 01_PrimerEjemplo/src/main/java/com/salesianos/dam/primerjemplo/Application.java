@@ -1,4 +1,4 @@
-package com.salesianos.dam.primerejemplo;
+package com.salesianos.dam.primerjemplo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -16,7 +16,6 @@ public class DataSeed {
     @PostConstruct
     public void initData() {
 
-        // --- PRUEBAS RESERVA Y RESERVADTO ---
         Cliente cliente1 = Cliente.builder()
                 .id(1L)
                 .nombre("Juan")
