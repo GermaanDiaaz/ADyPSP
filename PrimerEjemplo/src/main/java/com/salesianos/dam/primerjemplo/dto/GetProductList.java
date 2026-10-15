@@ -1,5 +1,6 @@
 package com.salesianos.dam.primerjemplo.dto;
 
+
 import com.salesianos.dam.primerjemplo.model.Product;
 
 public record GetProductList(
@@ -9,10 +10,10 @@ public record GetProductList(
         String categoryName
 ) {
 
-    public static GetProductList of(Product p) {
-        return new GetProductList(p.getId(), p.getName(), p.getPrice());
-    }
 
+    public static GetProductList of(Product pr) {
+        return new GetProductList(pr.getId(), pr.getName(), pr.getPrice(), pr.getDetails());
+    }
 
 
 

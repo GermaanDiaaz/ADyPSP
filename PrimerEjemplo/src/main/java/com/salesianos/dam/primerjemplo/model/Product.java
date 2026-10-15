@@ -1,11 +1,8 @@
 package com.salesianos.dam.primerjemplo.model;
 
-/*record Product(String name, String price){}*/
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -28,23 +25,6 @@ public class Product {
 
     @Builder.Default
     private LocalDateTime createdAt = LocalDateTime.now();
-
-
-    @ManyToOne
-    private Category category;
-
-
-    /*
-        TIPOS DE ASOCIACIONES
-
-        ManyToOne: Product -> Category
-        OneToMany: Category ->>> Product
-        ManyToMany: Product <<<-->>> Tag
-        OneToOne: Product -> ProductInfo
-
-     */
-
-
 
 }
 
